@@ -1,0 +1,82 @@
+
+/* ваш css код здесь */
+/* START Форма поиска*/
+p{
+	margin-bottom: 0;
+}
+.b-search-form{
+	font-size: 15px;
+}
+.b-search-form__input{
+	height: 34px;
+	width: 276px;
+	border: #43A443 1px solid;
+	border-radius: 4px;
+	padding-left: 10px;
+	color: #8e8e8e;
+}
+.b-search-form__button{
+	height: 34px;
+	width: 71px;
+	margin-left: -5px;
+	border-radius: 4px;
+	border: #43A443 1px solid;
+	background: #52AF52;
+	color: #fff;
+}
+/* END Форма поиска*/
+
+/* START карточка товара*/
+.b-card-item{
+	font-size: 14px;
+	width: 245px;
+	height: 478px;
+}
+.card-item-top-cell{
+	position: relative;
+}
+/* Табличку "Premium" изначально думал сделать как блок с текстом, но IE не хочет правильно поворачивать элементы*/
+
+/*.card-item-top-cell .card-item-top-cell__vertical-label{
+	position: absolute;
+	bottom: 25px;
+	left: -34px;
+	font-size: 22px;
+	text-transform: uppercase;
+ 	-moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    writing-mode: tb-lr;    
+}*/
+
+.card-item-top-cell .card-item-top-cell__vertical-label{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.card-item-top-cell__discount{
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	background-color: #d91940;
+	color: #FFF;
+	border: 2px solid #fff;
+}
+
+.card-item-bottom-cell{
+	margin-top: 45px;
+}
+.card-item-bottom-cell__old-price{
+	color: #7e7e7e;
+	text-decoration: line-through;
+	font-size: 16px;
+}
+.card-item-bottom-cell__new-price{
+	color: #d71a3e;
+	font-size: 16px;
+	margin-left: 5px;
+	font-weight: 600;
+}
+
+/* END карточка товара*/

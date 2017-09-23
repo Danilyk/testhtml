@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задачи для верстальщика</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+   	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+   	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<article>
+			<section>
+				<h1>Задачи для верстальщика</h1>
+				<a href="archive.zip" class="btn btn-success">Скачать архив с тестовым заданием</a>
+			</section>
+
+			<section>
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Сверстать форму поиска</h2>
+						<p>Сверстать форму поиска как на картинке.</p>
+						<ul>
+							<li>Будет обращено внимание на семантичность использованных html-тегов.</li>
+							<li>Желательно использовать БЭМ-подход к именованию классов.</li>
+						</ul>
+						<p>CSS-код пишется в файле <code>css/style.css</code>.</p>
+						<p><strong>Использовать фреймворки и ui-библиотеки нельзя, html и css должен быть вашим.</strong></p>
+					</div>
+					<div class="col-md-6">
+						<p>Пример компонента поиска:</p>
+						<img src="img/form.png">
+						<br><br>
+						<p>Ваша реализация формы:</p>
+						<div class="yourForm">
+							<!-- START ваш html-код формы --> 
+								<form class="b-search-form" action="">
+									<input class="b-search-form__input" type="text" placeholder=" Введите данные для поиска..."><!-- 
+									 --><input class="b-search-form__button" type="submit" value="Искать">
+									<!-- или  <button class="b-search-form__button">Искать</button> -->
+								</form>
+							<!-- END ваш html-код формы -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Сверстать карточку товара</h2>
+						<p>Сверстать карточку товара как на картинке.</p>
+						<ul>
+							<li>Pixel-perfect не требуется.</li>
+							<li>Желательно использовать БЭМ-подход к именованию классов.</li>
+							<li>Изображение находится по пути <code>img/card.jpg</code>.</li>
+						</ul>
+						<p>CSS-код пишется в файле <code>css/style.css</code>.</p>
+						<p><strong>Использовать фреймворки и ui-библиотеки нельзя, html и css должен быть вашим.</strong></p>
+					</div>
+					<div class="col-md-6">
+						<p>Пример карточки товара:</p>
+						<img src="img/card.png">
+						<br><br>
+						
+					</div>
+					<div class="col-md-12">
+						<p>Ваша реализация карточки товара:</p>
+						<div class="yourCard">
+							<!-- START ваш html-код карточки товара --> 
+							
+							<div class="b-card-item">
+								<div class="card-item-top-cell">
+									<img class="card-item-top-cell__img" src="img/card.jpg" alt="">
+									
+									<img class="card-item-top-cell__vertical-label" src="img/premiumLabel.png" alt="Premium">
+									<!-- <div class="card-item-top-cell__vertical-label"> 
+										Premium
+									</div> -->
+									<div class="card-item-top-cell__discount">
+										-73%
+									</div>
+								</div>
+								
+								<div class="card-item-bottom-cell">
+									<p class="card-item-bottom-cell__title"> Брюки <br>Love Moschino</p>
+									<span class="card-item-bottom-cell__old-price">21 890 руб.</span><!-- 
+									 --><span class="card-item-bottom-cell__new-price">5 890 руб.</span>
+									<p class="card-item-bottom-cell__size"> Размеры: 46 46-48 48 52</p>
+								</div>
+								
+							</div>
+
+
+							<!-- END ваш html-код карточки товара -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Переключение табов</h2>
+						<p>Реализовать переключение табов. Логика работы:</p>
+						<ul>
+							<li>При клике на активный таб ничего не происходит.</li>
+							<li>При клике на неактивный таб, он получает класс <code>active</code>, а текущий перестаёт быть активным.</li>
+						</ul>
+						<p>Задача выполняется в файле <code>js/script.js</code>.</p>
+						<p><strong>Изменять текущую разметку элементов нельзя.</strong></p>
+					</div>
+					<div class="col-md-6">
+						<ul id="tabs" class="nav nav-tabs">
+							<li class="active"><a href="#">Таб 1</a></li>
+							<li><a href="#">Таб 2</a></li>
+							<li><a href="#">Таб 3</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Данные формы</h2>
+						<p>Реализовать вывод данных формы в консоль, используя команду <code>console.log</code>. Логика работы:</p>
+						<ul>
+							<li>При нажатии кнопки <code>Отправить</code> данные 2-х полей и чекбокса (в значении <code>true</code>/<code>false</code>).</li>
+							<li>Если оба поля пустые, то в консоль должно вывестись: <code>"форма не заполнена"</code>.</li>
+						</ul>
+						<p>Задача выполняется в файле <code>js/script.js</code>.</p>
+						<p><strong>Изменять текущую разметку элементов нельзя.</strong></p>
+					</div>
+					<div class="col-md-6">
+						<form id="form" class="form-horizontal" role="form">
+						  <div class="form-group">
+						    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+						    <div class="col-sm-10">
+						      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="inputPassword3" class="col-sm-2 control-label">Имя</label>
+						    <div class="col-sm-10">
+						      <input type="text" class="form-control" id="inputName" placeholder="Имя">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-sm-offset-2 col-sm-10">
+						      <div class="checkbox">
+						        <label>
+						          <input type="checkbox" id="rememberMe"> Запомнить меня
+						        </label>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <div class="col-sm-offset-2 col-sm-10">
+						      <button type="submit" class="btn btn-default">Отправить</button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+
+
+		</article>
+	
+
+
+
+			
+
+	<style type="text/css">
+		section + section {
+			margin-top: 80px;
+		}
+
+		[class*="col-md"] + [class*="col-md"] {
+			padding-top: 50px;
+		}
+	</style>
+	<script type="text/javascript" src="js/script.js"></script>
+	</div>
+</body>
+</html>
+
+	
+
